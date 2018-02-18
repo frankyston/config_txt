@@ -1,0 +1,35 @@
+//Baixar o reactotron e olhar a documentação
+https://github.com/infinitered/reactotron
+
+//ir para o link de Quick Start for React Native
+https://github.com/infinitered/reactotron/blob/master/docs/quick-start-react-native.md
+
+* instalar dependencias
+
+npm i --save-dev reactotron-react-native
+
+* criar pasta config dentro do src, criar arquivo
+
+ReactotronConfig.js
+
+*dentro do arquivo colocar o codigo abaixo
+
+import Reactotron from 'reactotron-react-native';
+
+const tron = Reactotron.configure()
+  .useReactNative()
+  .connect();
+
+tron.clear();
+
+console.tron = tron;
+
+* fazer o import ReactotronConfig dentro do arquivo no qual vc quer debugar 
+
+import ReactotronConfig from './config/ReactotronConfig';
+
+//formar de usar, desde que tenha feito as config acima
+console.tron.log('Teste');
+
+
+

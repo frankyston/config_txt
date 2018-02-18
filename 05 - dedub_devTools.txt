@@ -1,0 +1,31 @@
+//instalar ractdevTools
+
+# olhe a documentação caso tenha duvidas
+https://github.com/facebook/react-devtools/blob/master/packages/react-devtools/README.md
+
+* rodar o seguinte comando dentro do seu projeto
+yarn add react-devtools --dev || npm install -g react-devtools
+
+* criar pasta Config dentro do src (ignoarar caso tenha seguido os tutorias anteriores)
+* dentro da pasta Config criar o arquivo DevToolsConfig.js
+
+*dentro do arquivo DevToolsConfig.js, colocar o seguinte codigo
+#(esse comando é para que seja apenas executado no momento de desenvolvimento)
+if (__DEV__) {
+  require('react-devtools');
+}
+
+* fazer o import DevToolsConfig dentro do arquivo no qual vc quer debugar(inspencionar elementos) 
+
+import ReactotronConfig from './config/DevToolsConfig';
+
+* dentro do package.json, inserir o seguinte comando "react-devtool":"react-devtools"
+
+"scripts": {
+  "start": "node node_modules/react-native/local-cli/cli.js start",
+  "test": "jest",
+  "react-devtool":"react-devtools",
+},
+
+*dentro do terminal rodar o seguinte comoando 
+yarn run react-devtool
