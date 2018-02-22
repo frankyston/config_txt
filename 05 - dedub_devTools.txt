@@ -17,7 +17,7 @@ if (__DEV__) {
 
 * fazer o import DevToolsConfig dentro do arquivo no qual vc quer debugar(inspencionar elementos) 
 
-import ReactotronConfig from './config/DevToolsConfig';
+import DevToolsConfig from './config/DevToolsConfig';
 
 * dentro do package.json, inserir o seguinte comando "react-devtool":"react-devtools"
 

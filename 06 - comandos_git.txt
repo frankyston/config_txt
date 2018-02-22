@@ -1,0 +1,18 @@
+01 --> git init = indicar o inicio do gerenciamento de versão
+02 --> git status = verificar arquivos que que sofreram alteração
+03 --> git add = informar para o git os arquvios quais serao adicinados na historia
+04 --> git commit = criar o ponto na historia -m "mensagem do commit" (indicar alteração no codigo)
+05 --> git log = ver todos os pontos de commit que ja foram feitos ("q", para fechar)
+06 --> git diff = mostrar alteraçoes antes do git add (*.html, add tudo com essa extensao)
+07 --> .gitignore = server para remover pastas o arquivos no quais você não quer que suba para o git exemplo { node_modules/ }
+08 --> git log + commit && git checkout + cod = voltar versao 
+09 --> git checkout master = voltar para ultimo commit (git checkout pula para algum lugar)
+10 --> git branch "nome"= cria um novo ramo (novo espaço de trabalho)
+11 --> git branch = mostra todos os ramos disponiveis
+12 --> git checkout "nome da branch" = ir pa outra branch
+13 --> git merge "nome da branch" = voltar para branchq vc quer rodar 
+14 --> git branc -D "nome brench" = deletar o caule e manter so o master
+(o git q vc ira usar)
+15 --> git remote add origin "add url"
+16 --> git remote -v = mostra os links disponiveis
+17 --> git push origin master

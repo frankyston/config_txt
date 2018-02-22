@@ -32,7 +32,12 @@ no formato json devDependences *
 yarn || npm install
 
 * logo apos instalar as dependencias acima, instalar os seguintes pacotes
+
+
 yarn add babel-eslint eslint-config-airbnb eslint-plugin-react-native --dev
+
+
+
 
 * depois de instalar todas as dependencias criar criar o arquivo .eslintrc, na pasta raiz com seguinte codigo
 
@@ -46,23 +51,13 @@ ou
     "browser": true,
     "jest": true
   },
-  "plugins": [
-    "react-native",
-    "jsx-a11y",
-    "import"
-  ],
-  "extends": [
-    "airbnb",
-    "plugin:react-native/all"
-  ],
+  "plugins": ["react-native", "jsx-a11y", "import"],
+  "extends": ["airbnb", "plugin:react-native/all"],
   "rules": {
     "react/jsx-filename-extension": [
       "error",
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "global-require": "off",
@@ -73,7 +68,15 @@ ou
       {
         "argsIgnorePattern": "^_"
       }
-    ]
+    ],
+    "arrow-body-style": 0,
+    "no-underscore-dangle": "off",
+    "arrow-parens": [2, "always"]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
   },
   "globals": {
     "__DEV__": true
