@@ -15,4 +15,5 @@
 (o git q vc ira usar)
 15 --> git remote add origin "add url"
 16 --> git remote -v = mostra os links disponiveis
-17 --> git push origin master
+17 --> git push origin master = subir as alteraçoes 
+18 --> git clone + url do projeto

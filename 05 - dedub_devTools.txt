@@ -4,6 +4,7 @@
 https://github.com/facebook/react-devtools/blob/master/packages/react-devtools/README.md
 
 * rodar o seguinte comando dentro do seu projeto
+
 yarn add react-devtools --dev || npm install -g react-devtools
 
 * criar pasta Config dentro do src (ignoarar caso tenha seguido os tutorias anteriores)
@@ -11,6 +12,7 @@ yarn add react-devtools --dev || npm install -g react-devtools
 
 *dentro do arquivo DevToolsConfig.js, colocar o seguinte codigo
 #(esse comando é para que seja apenas executado no momento de desenvolvimento)
+
 if (__DEV__) {
   require('react-devtools');
 }
@@ -28,4 +30,5 @@ import DevToolsConfig from './config/DevToolsConfig';
 },
 
 *dentro do terminal rodar o seguinte comoando 
+
 yarn run react-devtool

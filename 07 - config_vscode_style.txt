@@ -1,3 +1,5 @@
+// estilo so será aplicado ao thema dracula
+
 "workbench.colorCustomizations": {
         "[Dracula]": {
             "dropdown.background": "#383838",

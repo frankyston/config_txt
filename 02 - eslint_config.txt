@@ -1,4 +1,4 @@
-Eslint config
+Eslint config - baseado nas config do airbnb
 //01 Primeiro instalar o eslint global
 
 yarn global add eslint
@@ -10,7 +10,9 @@ atom:
 https://atom.io/packages/linter-eslint
 
 //02 Verificar a ultima versao do eslint-airbnb
+
 npm info "eslint-config-airbnb@latest" peerDependencies
+
 exemplo:
 { 
   'eslint': '^4.9.0',
@@ -20,7 +22,6 @@ exemplo:
 }
 
 * pegar a depedencia de retorno e inserir no package.json, 
-no formato json devDependences *
 {
   "eslint": '^4.9.0",
   "eslint-plugin-import": "^2.7.0",
@@ -29,14 +30,13 @@ no formato json devDependences *
 }
 
 #Rodar comandos para instalar dependencias 
+
 yarn || npm install
 
 * logo apos instalar as dependencias acima, instalar os seguintes pacotes
 
 
 yarn add babel-eslint eslint-config-airbnb eslint-plugin-react-native --dev
-
-
 
 
 * depois de instalar todas as dependencias criar criar o arquivo .eslintrc, na pasta raiz com seguinte codigo
